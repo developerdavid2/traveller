@@ -1,0 +1,30 @@
+.header {
+    height: 70rem;
+    margin-bottom: $gutter-vertical;
+    background-image: linear-gradient(to right bottom, rgba($color-ambient-blue-light, 0.8), rgba($color-ambient-blue-dark, 0.7)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 4.5rem;
+        left: 4.5rem;
+    }
+
+    &__logo {
+        height: 7rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+    }
+
+}

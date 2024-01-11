@@ -1,0 +1,44 @@
+.fas {
+    color: $color-grey-light-1;
+    padding-right: 1rem;
+
+}
+
+.fa-star {
+    display: inline-block;
+    color: goldenrod;
+}
+
+.fa-location-dot {
+    color: rgb(255, 123, 0);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+    padding-right: 1rem;
+    float: left;
+    font-size: 1.7rem;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+}
+
+.fa-marker {
+    color: $color-grey-light-1;
+}
+
+.footer__links {
+
+    &:hover,
+    &:hover .fa-hotel,
+    &:hover .fa-globe,
+    &:hover .fa-cab,
+    &:hover .fa-plane,
+    &:hover .fa-marker {
+        color: $color-primary-light;
+    }
+}
+
+.fa-close {
+    color: $color-grey-dark-2;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
