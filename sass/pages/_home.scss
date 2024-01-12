@@ -1,7 +1,11 @@
 .section-about {
     background-color: $color-grey-light-1;
     padding: 20rem 0;
-    margin-top: -20vh;
+    margin-top: -10vh;
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
 }
 
 .section-features {
@@ -16,17 +20,29 @@
     // &>* {
     //     transform: skewY(-2deg);
     // }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-tours {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 5rem 0;
+    }
 }
 
 .section-story {
     position: relative;
     padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
 }
 
 .section-company {
@@ -37,6 +53,10 @@
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-ambient-blue-light, $color-ambient-blue-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .footer {

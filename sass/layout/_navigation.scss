@@ -47,6 +47,8 @@
         @include respond(tab-port) {
             top: 5rem;
             right: 5rem;
+            transition: all .5s cubic-bezier(0.86, 0, 0.07, 1);
+
         }
 
         @include respond(phone) {
@@ -65,6 +67,10 @@
         z-index: 1500;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         visibility: hidden;
+
+        @include respond(tab-port) {
+            transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
     }
 
     &__list {
@@ -72,6 +78,10 @@
         text-align: center;
         list-style: none;
         width: 100%;
+
+        @include respond(tab-port) {
+            top: 35%;
+        }
     }
 
     &__item {

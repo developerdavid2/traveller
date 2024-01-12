@@ -35,6 +35,10 @@
         outline: 1rem solid $color-primary-light;
         transform: scale(1.05) translateY(-.5rem);
 
+        @include respond(phone) {
+            outline: none;
+        }
+
         .img-fluid {
             filter: none;
 

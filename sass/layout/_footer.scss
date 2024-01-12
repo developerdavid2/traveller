@@ -8,10 +8,6 @@
             text-align: center;
         }
 
-
-
-
-
         .newsletter {
             display: table;
             display: block;
@@ -22,7 +18,6 @@
                 padding: 3rem 10rem;
                 float: left;
                 display: table-cell;
-
 
                 @include respond(tab-port) {
                     display: block;
@@ -109,7 +104,6 @@
                         transform: translateY(0);
                     }
                 }
-
             }
         }
     }
@@ -141,7 +135,6 @@
             &:hover {
                 color: $color-primary-light;
             }
-
         }
     }
 

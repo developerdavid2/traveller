@@ -1,12 +1,15 @@
 .header {
-    height: 70rem;
+    height: 60rem;
     margin-bottom: $gutter-vertical;
     background-image: linear-gradient(to right bottom, rgba($color-ambient-blue-light, 0.8), rgba($color-ambient-blue-dark, 0.7)),
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
-
     position: relative;
+
+    @include respond(tab-port) {
+        margin-bottom: 2rem;
+    }
 
     &__logo-box {
         position: absolute;
@@ -20,7 +23,7 @@
 
     &__text-box {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;

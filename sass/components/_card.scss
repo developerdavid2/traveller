@@ -165,6 +165,8 @@
         }
 
         &--pricing {
+            position: relative;
+
             &--price {
                 color: $color-black;
                 display: inline-block;
@@ -174,6 +176,20 @@
             &--paragraph {
                 display: inline-block;
             }
+        }
+
+    }
+
+    &__button {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -0.8rem;
+
+        .button__popup {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1rem;
         }
 
     }
@@ -208,5 +224,32 @@
         font-size: 6rem;
         font-weight: 500;
 
+    }
+
+    @include respond(tab-port) {
+        height: auto;
+
+        &__side {
+            height: auto;
+            position: relative;
+            border-radius: 4rem;
+
+            &--front {
+                background-color: $color-white;
+            }
+
+            &--back {
+                transform: rotateY(0deg);
+            }
+        }
+
+
+        &:hover &__side--front {
+            transform: rotateY(0deg);
+        }
+
+        &__button {
+            display: inline-block;
+        }
     }
 }
