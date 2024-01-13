@@ -1122,8 +1122,8 @@ body {
   }
 }
 .footer__logo {
-  width: 12rem;
-  height: 12rem;
+  width: auto;
+  height: 20rem;
 }
 
 .row {
