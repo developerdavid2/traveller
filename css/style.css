@@ -54,6 +54,7 @@
 }
 
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
 }
 @media (min-width: 112.5em) {
@@ -1123,7 +1124,12 @@ body {
 }
 .footer__logo {
   width: auto;
-  height: 20rem;
+  height: 16rem;
+}
+@media (max-width: 37.5em) {
+  .footer__logo {
+    height: 8rem;
+  }
 }
 
 .row {

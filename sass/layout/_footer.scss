@@ -167,6 +167,10 @@
 
     &__logo {
         width: auto;
-        height: 20rem;
+        height: 16rem;
+
+        @include respond (phone) {
+            height: 8rem;
+        }
     }
 }
